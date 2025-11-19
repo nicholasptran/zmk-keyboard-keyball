@@ -5,6 +5,7 @@
 #define SCROLL  4
 #define SNIPE   5
 
+#include <dt-bindings/zmk/behaviors.h>
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
 #include <input/processors.dtsi>
@@ -53,7 +54,7 @@
         lmt: layer_m_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_M_TAP";
-            bindings = <&lt>, <&mkp>;
+            bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
