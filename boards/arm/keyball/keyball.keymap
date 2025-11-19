@@ -16,7 +16,7 @@
 &nice_view_spi { cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; };
 
 &lt {
-    tapping-term-ms = <240>;
+    tapping-term-ms = <200>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
@@ -46,6 +46,17 @@
             label = "CSHARP_LAMBDA";
             wait-ms = <30>;
             tap-ms = <30>;
+        };
+    };
+
+    behaviors {
+        lmt: layer_mouse_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_MOUSE_TAP";
+            bindings = <&lt>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
