@@ -54,7 +54,7 @@
         lmt: layer_mouse_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_MOUSE_TAP";
-            bindings = <&mo>, <&mkp>;
+            bindings = <&lt>, <&mkp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
