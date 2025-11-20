@@ -50,9 +50,9 @@
     };
 
     behaviors {
-        lmt: layer_m_tap {
+        lmt: layer_mouse_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_M_TAP";
+            label = "LAYER_MOUSE_TAP";
             bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
