@@ -95,8 +95,8 @@
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
-
         diode-direction = "col2row";
+        wakeup-source;
     };
 
     trackball_listener: trackball_listener {
@@ -104,3 +104,4 @@
         status = "disabled";
     };
 };
+
