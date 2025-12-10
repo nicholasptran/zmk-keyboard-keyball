@@ -1,9 +1,14 @@
 manifest:
   remotes:
-    - name: nicholasptran
-      url-base: https://github.com/nicholasptran
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    # - name: nicholasptran
+    #   url-base: https://github.com/nicholasptran
   projects:
+    # - name: zmk-pmw3610-driver
+    #   remote: nicholasptran
+    #   revision: main
     - name: zmk-pmw3610-driver
-      remote: nicholasptran
+      remote: badjeff
       revision: main
 
